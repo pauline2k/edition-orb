@@ -1,6 +1,5 @@
 .DS_Store
-assets/built
-dist
-node_modules
+assets/built/*
+dist/*
+node_modules/*
 package-lock.json
-

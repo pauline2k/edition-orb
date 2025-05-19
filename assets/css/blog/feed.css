@@ -16,6 +16,13 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.feed-header-title-icon {
+    margin-right: 5px;
 }
 
 .post-feed {

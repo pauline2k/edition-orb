@@ -5,15 +5,25 @@
     <header class="feed-header gh-canvas">
         {{#if @custom.feed_title}}
             <div class="feed-header-wrapper">
-                <h2 class="feed-header-title">{{@custom.feed_title}}</h2>
+                <h2 class="feed-header-title">
+                  <img
+                    class="feed-header-title-icon"
+                    width="39"
+                    height="20"
+                    src="assets/images/hand-icon-left.png"
+                  >
+                  {{@custom.feed_title}}
+                </h2>
             </div>
         {{/if}}
     </header>
 
     <div class="post-feed{{#match @custom.feed_layout "!=" "Minimal"}} expanded{{/match}}{{#match @custom.feed_layout "Right thumbnail"}} right-thumbnail{{/match}}{{#match @custom.feed_layout "Text-only"}} text-only{{/match}} gh-feed gh-canvas">
-        {{#foreach posts}}
-            {{> "loop"}}
-        {{/foreach}}
+        {{#get "posts" filter="featured:false" as |post|}}
+            {{#foreach posts}}
+                {{> "loop"}}
+            {{/foreach}}
+        {{/get}}
     </div>
 
     {{pagination}}

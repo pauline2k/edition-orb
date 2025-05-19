@@ -1,3 +1,7 @@
+.featured-placeholder {
+    height: 200px;
+}
+
 .featured-wrapper {
     padding-top: 6vmin;
     margin-top: 3rem;
@@ -31,6 +35,13 @@
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     border-bottom: 1px solid var(--light-gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.featured-title-icon {
+    margin-left: 5px;
 }
 
 .featured-feed {

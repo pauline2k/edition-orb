@@ -1,5 +1,5 @@
 body:not(.with-full-cover) .cover {
-    margin-top: 9vmin;
+    margin-top: 0;
 }
 
 .with-full-cover .cover {
@@ -46,13 +46,13 @@ body:not(.with-full-cover) .cover {
     align-items: center;
     width: 100%;
     max-width: 720px;
-    margin: auto;
+    margin: 30px auto 0;
     text-align: center;
 }
 
 .cover-description {
     font-family: var(--gh-font-heading, var(--font-sans));
-    font-size: 3.6rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: -0.01em;
@@ -79,7 +79,7 @@ body:not(.with-full-cover) .cover {
 .cover-form {
     width: 100%;
     max-width: 480px;
-    margin-top: 4.5rem;
+    margin-top: 1.5rem;
 }
 
 .cover-form input {
@@ -118,7 +118,7 @@ body:not(.with-full-cover) .cover {
 
 @media (max-width: 767px) {
     .cover-description {
-        font-size: 2.7rem;
+        font-size: 2rem;
     }
 }
 

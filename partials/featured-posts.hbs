@@ -3,14 +3,22 @@
     <div class="gh-outer">
     <section class="featured-wrapper gh-inner">
 
-        {{#if @custom.featured_title}}
-            <h2 class="featured-title">{{@custom.featured_title}}</h2>
-        {{/if}}
+        <div class="gh-canvas">
+            {{#if @custom.featured_title}}
+                <h2 class="featured-title">
+                  {{@custom.featured_title}}
+                  <img
+                    class="featured-title-icon"
+                    width="39"
+                    height="20"
+                    src="assets/images/hand-icon-right.png"
+                  >
+                </h2>
+            {{/if}}
 
-        <div class="featured-feed">
             {{#foreach featured}}
             <article class="{{post_class}}">
-                <div class="u-placeholder horizontal">
+                <div class="u-placeholder featured-placeholder horizontal">
                     {{#if feature_image}}
                         <img
                             class="u-object-fit"
