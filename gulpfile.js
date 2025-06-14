@@ -83,6 +83,7 @@ function zipper(done) {
             '**',
             '!node_modules', '!node_modules/**',
             '!dist', '!dist/**',
+            '!labs', '!labs/**',
             '!yarn-error.log'
         ], {
             encoding: false,
